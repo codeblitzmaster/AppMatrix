@@ -46,7 +46,7 @@ C --> D[Business Logic & Data Orchestration]
 end
 
 subgraph DataLayer
-D --> E[(Database: PostgreSQL / CosmosDB)]
+D --> E[(Database: PostgreSQL or CosmosDB)]
 D --> F[(Graph Store: Neo4j)]
 end
 
@@ -54,7 +54,7 @@ subgraph Integrations
 D --> G[Azure Resource Graph]
 D --> H[AWS Config]
 D --> I[ServiceNow / CMDB]
-D --> J[Monitoring Tools (e.g., Prometheus)]
+D --> J[Monitoring Tools - Prometheus]
 end
 
 style A fill:#d9f0ff,stroke:#0077b6,stroke-width:1px
